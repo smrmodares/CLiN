@@ -1,4 +1,4 @@
-Sentence,Originality,Fluency,Elaboration,Emotion,Creativity,Attractiveness,Ngram,Lexical_Idea,Novelty,Sum_Objective,Sum_TTCT_Metrics
+Sentence,Originality,Fluency,Elaboration,Emotion,Creativity,Attractiveness,Ngram,Lexical_Idea,Novelty,CLiN,Sum_TTCT_Metrics
 عشقم، تمام زبانها ناقصند که بتوانند جمال تو را توصیف کنند. تو معجزه ای زنده ای که تنها میتوان با قلب حسش کرد.,2,2,3,2,2,2,25,9,0.11,0.45,7
 از جان چه خبر گیری و از چشم چه پرسی آن بی تو پر از آتش و این بی تو پر آب است,2,2,3,3,3,3,9,6,0.12,0.27,7
 عشق تو زیباترین لذتی هست که تا به حال تجربه کرده ام و دلتنگی تو بدترین دردی است که تا به حال از ان رنج برده ام خیلی دلم برات تنگ شده عشقم,1,2,3,2,2,2,29,13,0.02,0.44,6

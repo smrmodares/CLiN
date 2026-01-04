@@ -1,4 +1,4 @@
-Sentence,Originality,Fluency,Elaboration,Emotion,Creativity,Attractiveness,Ngram,Lexical_Idea,Novelty,Sum_Objective,Sum_TTCT_Metrics
+Sentence,Originality,Fluency,Elaboration,Emotion,Creativity,Attractiveness,Ngram,Lexical_Idea,Novelty,CLiN,Sum_TTCT_Metrics
 عشق، آتشی است که در دل هر کسی روشنایی امید و شور و شعف و عطر زاده است.,2,1,2,1,2,1,19,8,0.06,5.33,5
 عشق، همچون گلی زیبا که در دل یک باغ رشد می‌کند و با رنگ‌ها و عطرش زیبایی و زندگی به اطرافش می‌بخشد.,1,2,3,2,1,2,23,9,0.02,6.18,6
 عشق، چون نقاشی‌ای بی‌پایان است که هر قطره‌اش زیبایی بی‌پایان دنیا را بازتاب می‌دهد.,1,1,2,2,2,2,17,4,0.01,4.33,4
