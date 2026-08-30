@@ -7,33 +7,45 @@
   <meta name="description" content="CLiN is an objective and interpretable framework for creativity evaluation in short Persian literary texts, with TTCT-derived proxies for originality, fluency, and elaboration and a systematic study of LLM-as-a-judge reliability." />
   <meta name="keywords" content="CLiN, creativity evaluation, LLM as a judge, LLM judge reliability, TTCT, originality, fluency, elaboration, Persian NLP, literary text, interpretable evaluation" />
   <meta name="robots" content="index,follow" />
-  <meta name="citation_title" content="CLIN: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts" />
+  <meta name="citation_title" content="CLiN: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts" />
+  <meta name="citation_author" content="Mohammad Reza Modarres" />
+  <meta name="citation_author" content="Armin Tourajmehr" />
+  <meta name="citation_author" content="Mohammad Taher Pilehvar" />
+  <meta name="citation_author" content="Yadollah Yaghoobzadeh" />
   <meta name="citation_publication_date" content="2026" />
+  <meta name="citation_conference_title" content="Findings of the 2026 Conference on Empirical Methods in Natural Language Processing" />
   <link rel="canonical" href="https://smrmodares.github.io/CLiN/" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="CLiN — Objective and Interpretable Creativity Evaluation" />
   <meta property="og:description" content="A systematic study of LLMs as creativity judges and simple, interpretable TTCT-derived proxy metrics for originality, fluency, and elaboration." />
   <meta property="og:url" content="https://smrmodares.github.io/CLiN/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="assets/styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "name": "CLIN: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts",
+    "name": "CLiN: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts",
     "headline": "CLiN: Objective and Interpretable Creativity Evaluation",
     "description": "An objective and interpretable framework for evaluating originality, fluency, and elaboration in short Persian literary texts, alongside a systematic analysis of LLM-as-a-judge reliability.",
     "dateCreated": "2026",
     "inLanguage": "en",
+    "author": [
+      {"@type":"Person","name":"Mohammad Reza Modarres"},
+      {"@type":"Person","name":"Armin Tourajmehr"},
+      {"@type":"Person","name":"Mohammad Taher Pilehvar"},
+      {"@type":"Person","name":"Yadollah Yaghoobzadeh"}
+    ],
+    "isPartOf": {"@type":"PublicationIssue","name":"Findings of EMNLP 2026"},
     "keywords": ["creativity evaluation", "LLM-as-a-judge", "TTCT", "Persian NLP", "originality", "fluency", "elaboration"],
     "url": "https://smrmodares.github.io/CLiN/",
     "codeRepository": "https://github.com/smrmodares/CLiN"
   }
   </script>
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/enhancements.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="nav-wrap">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="CLiN home"><span class="brand-mark">C</span><span>CLiN</span></a>
@@ -47,18 +59,46 @@
     </nav>
   </header>
 
-  <main id="main">
+  <main>
     <section class="hero" id="top">
       <div class="container hero-inner">
         <div class="eyebrow">Creativity evaluation · LLM-as-a-judge · Persian NLP</div>
         <h1><span class="accent">CLiN</span>: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts</h1>
+
+        <div class="author-block">
+          <div class="author-row">
+            <span>Mohammad Reza Modarres<sup>1,2*</sup></span>
+            <span>Armin Tourajmehr<sup>2*</sup></span>
+          </div>
+          <div class="author-row">
+            <span>Mohammad Taher Pilehvar<sup>3</sup></span>
+            <span>Yadollah Yaghoobzadeh<sup>1,2</sup></span>
+          </div>
+          <div class="affiliations">
+            <div><sup>1</sup> School of Electrical and Computer Engineering, College of Engineering, University of Tehran, Tehran, Iran</div>
+            <div><sup>2</sup> Tehran Institute for Advanced Studies, Khatam University, Iran</div>
+            <div><sup>3</sup> Cardiff University, United Kingdom</div>
+          </div>
+          <div class="equal-note"><sup>*</sup> Equal contribution</div>
+          <div class="venue-badge"><span class="venue-dot"></span> EMNLP 2026 Findings</div>
+        </div>
+
         <p class="hero-lede">Can increasingly sophisticated LLM judges reliably evaluate creativity? We systematically test that assumption and introduce a simple, interpretable alternative for three structured TTCT-derived dimensions.</p>
+
         <div class="hero-actions">
           <a class="button primary" href="#framework">Explore CLiN</a>
           <a class="button secondary" href="https://github.com/smrmodares/CLiN/tree/main/code">View code</a>
           <a class="button secondary" href="https://github.com/smrmodares/CLiN/tree/main/data">View data</a>
+          <span class="button secondary pending-link logo-only-button" title="arXiv link will be added later" aria-label="arXiv">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/ArXiv_logo_2022.svg" alt="arXiv logo" />
+          </span>
+
+          <span class="button secondary pending-link anthology-button" title="ACL Anthology link will be added later" aria-label="ACL Anthology">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Association_for_Computational_Linguistics_logo.svg" alt="ACL logo" />
+            <span>ACL Anthology</span>
+          </span>
         </div>
-        <p class="paper-status">Project page for the paper and released research artifacts. Final archival citation metadata will be added upon publication.</p>
+        <p class="paper-status">Accepted to Findings of EMNLP 2026. Archival paper links will be added when available.</p>
       </div>
     </section>
 
@@ -82,32 +122,103 @@
           <p>CLiN evaluates each TTCT-derived dimension separately with a dedicated, interpretable proxy. It does not collapse the dimensions into a single creativity score.</p>
         </div>
 
-        <div class="pipeline" aria-label="CLiN proxy pipeline">
-          <article class="metric-card novelty">
-            <div class="metric-top"><span class="metric-index">01</span><span class="metric-tag">Originality</span></div>
-            <h3>Novelty</h3>
-            <p>Combines global statistical surprise with topic-relative uniqueness to capture both broadly uncommon and locally distinctive expression.</p>
+        <div class="pipeline unified-pipeline" aria-label="CLiN proxy pipeline">
+
+          <article class="metric-card novelty unified-metric">
+            <div class="metric-top">
+              <span class="metric-index">01</span>
+              <span class="metric-tag">TTCT: Originality</span>
+            </div>
+
+            <h3>Originality → Novelty</h3>
+            <p class="metric-explanation">
+              Originality reflects how uncommon or distinctive an idea is. CLiN captures this
+              with a novelty score that combines global statistical rarity with topic-relative uniqueness.
+            </p>
+
+            <div class="metric-visual novelty-visual">
+              <div class="formula-big">Novelty = PPL × Diversity</div>
+              <div class="two-part">
+                <div>
+                  <strong>PPL</strong>
+                  <span>global rarity</span>
+                </div>
+                <div>
+                  <strong>Diversity</strong>
+                  <span>topic-specific uniqueness</span>
+                </div>
+              </div>
+            </div>
+
             <div class="formula">Normalized PPL × Diversity</div>
             <div class="rho">ρ = <strong>0.45</strong></div>
           </article>
+
           <div class="arrow" aria-hidden="true">→</div>
-          <article class="metric-card lexical">
-            <div class="metric-top"><span class="metric-index">02</span><span class="metric-tag">Fluency</span></div>
-            <h3>Lexical Idea</h3>
-            <p>Clusters contextual token representations so semantically related words can act as a proxy for a shared underlying idea.</p>
+
+          <article class="metric-card lexical unified-metric">
+            <div class="metric-top">
+              <span class="metric-index">02</span>
+              <span class="metric-tag">TTCT: Fluency</span>
+            </div>
+
+            <h3>Fluency → Lexical Idea</h3>
+            <p class="metric-explanation">
+              Fluency reflects the production of multiple ideas. CLiN approximates idea count by
+              clustering contextual token representations into semantically related groups.
+            </p>
+
+            <div class="metric-visual cluster-visual">
+              <div class="cluster-line large-clusters">
+                <span class="cluster-bubble"></span>
+                <span class="cluster-bubble"></span>
+                <span class="cluster-bubble"></span>
+                <span class="cluster-bubble"></span>
+                <span class="cluster-bubble"></span>
+              </div>
+              <div class="visual-caption">semantic clusters of token embeddings</div>
+            </div>
+
             <div class="formula">Contextual embeddings → DBSCAN</div>
             <div class="rho">ρ = <strong>0.46</strong></div>
           </article>
+
           <div class="arrow" aria-hidden="true">→</div>
-          <article class="metric-card elaboration">
-            <div class="metric-top"><span class="metric-index">03</span><span class="metric-tag">Elaboration</span></div>
-            <h3>N-gram Diversity</h3>
-            <p>Uses lexical diversity as a simple proxy for elaboration, counting unique content-bearing units after normalization and stopword removal.</p>
+
+          <article class="metric-card elaboration unified-metric">
+            <div class="metric-top">
+              <span class="metric-index">03</span>
+              <span class="metric-tag">TTCT: Elaboration</span>
+            </div>
+
+            <h3>Elaboration → N-gram Diversity</h3>
+            <p class="metric-explanation">
+              Elaboration reflects the amount of detail used to develop an idea. CLiN uses
+              lexical diversity as a simple proxy, counting unique content-bearing units.
+            </p>
+
+            <div class="metric-visual elaboration-visual">
+              <div class="token-flow centered-flow">
+                <span class="token-box">text</span>
+                <span>→</span>
+                <span class="token-bars"><i></i><i></i><i></i></span>
+                <span>→</span>
+                <span class="token-box">✓</span>
+              </div>
+              <div class="visual-caption">unique content-bearing units</div>
+            </div>
+
             <div class="formula">Unique content-bearing tokens</div>
             <div class="rho">ρ = <strong>0.67</strong></div>
           </article>
+
         </div>
-        <p class="micro-note">Spearman correlations above are with the corresponding human-rated TTCT dimensions, averaged over all 200 texts.</p>
+        <p class="micro-note">
+          Each card pairs the human-rated TTCT dimension with its corresponding CLiN proxy and
+          visualizes the computation used by that proxy. Spearman correlations are computed against
+          the corresponding human ratings across all 200 texts.
+        </p>
+
       </div>
     </section>
 
@@ -135,6 +246,34 @@
             <div class="big-number">↓</div>
             <p>LLM–human alignment is consistently weaker for emotion and attractiveness than for the structured TTCT-derived dimensions.</p>
           </article>
+        </div>
+
+        <div class="heatmap-block">
+          <div class="heatmap-title-row">
+            <div>
+              <span class="kicker">LLM-as-a-judge</span>
+              <h3>Correlation with human ratings</h3>
+              <p>Spearman correlation by model and evaluation dimension.</p>
+            </div>
+            <div class="hm-toggle">
+              <button type="button" class="active" id="hm-human">Human-authored</button>
+              <button type="button" id="hm-model">Model-generated</button>
+            </div>
+          </div>
+
+          <div class="heatmap-shell">
+            <div class="heatmap-card">
+              <div class="heatmap-grid" id="heatmap-grid"></div>
+              <div class="hm-caption"><strong>*</strong> denotes cells marked as not statistically significant in the paper.</div>
+            </div>
+            <aside class="heatmap-insights">
+              <span class="kicker">Key pattern</span>
+              <h4>Structured dimensions are easier to judge</h4>
+              <div class="insight">Originality, fluency, and elaboration generally show stronger alignment with human ratings than attractiveness and emotion.</div>
+              <div class="insight">Claude 3.7 Sonnet is among the strongest overall zero-shot judges, but performance remains uneven across dimensions.</div>
+              <div class="insight">Subjective dimensions remain the most difficult, motivating an interpretable alternative for the structured TTCT-derived dimensions.</div>
+            </aside>
+          </div>
         </div>
 
         <div class="source-table-wrap">
@@ -205,9 +344,9 @@
         <h2>About the paper</h2>
         <p>Evaluating creativity in large language model outputs remains challenging because creativity is inherently subjective. We examine the reliability of LLMs as evaluators of short Persian literary texts across multiple evaluation settings and prompt designs. LLM judgments show limited alignment on highly subjective dimensions and substantial sensitivity to prompt formulation. Motivated by these findings, we investigate whether objective and interpretable proxy metrics can provide a reliable alternative for structured TTCT-derived dimensions. CLiN evaluates originality through novelty, fluency through lexical idea diversity, and elaboration through n-gram diversity. These simple proxies achieve human alignment comparable to or better than the strongest LLM judge in the studied setting while substantially reducing evaluation cost.</p>
         <div class="citation-box">
-          <strong>Paper title</strong>
-          <span>CLIN: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts</span>
-          <small>Final archival BibTeX and publication links will be added when available.</small>
+          <strong>Publication</strong>
+          <span>Findings of EMNLP 2026</span>
+          <small>arXiv and ACL Anthology links will be added when provided.</small>
         </div>
       </div>
     </section>
@@ -221,5 +360,6 @@
   </footer>
 
   <script src="assets/site.js"></script>
+  <script src="assets/heatmap.js"></script>
 </body>
 </html>
