@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smrmodares.github.io/CLiN/sitemap.xml
