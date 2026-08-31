@@ -10,8 +10,8 @@
   <meta name="citation_title" content="CLiN: an Objective Framework for Evaluating Creativity in Short Persian Literary Texts" />
   <meta name="citation_author" content="Mohammad Reza Modarres" />
   <meta name="citation_author" content="Armin Tourajmehr" />
-  <meta name="citation_author" content="Mohammad Taher Pilehvar" />
   <meta name="citation_author" content="Yadollah Yaghoobzadeh" />
+  <meta name="citation_author" content="Mohammad Taher Pilehvar" />
   <meta name="citation_publication_date" content="2026" />
   <meta name="citation_conference_title" content="Findings of the 2026 Conference on Empirical Methods in Natural Language Processing" />
   <link rel="canonical" href="https://smrmodares.github.io/CLiN/" />
@@ -32,8 +32,8 @@
     "author": [
       {"@type":"Person","name":"Mohammad Reza Modarres"},
       {"@type":"Person","name":"Armin Tourajmehr"},
-      {"@type":"Person","name":"Mohammad Taher Pilehvar"},
-      {"@type":"Person","name":"Yadollah Yaghoobzadeh"}
+      {"@type":"Person","name":"Yadollah Yaghoobzadeh"},
+      {"@type":"Person","name":"Mohammad Taher Pilehvar"}
     ],
     "isPartOf": {"@type":"PublicationIssue","name":"Findings of EMNLP 2026"},
     "keywords": ["creativity evaluation", "LLM-as-a-judge", "TTCT", "Persian NLP", "originality", "fluency", "elaboration"],
@@ -67,19 +67,18 @@
 
         <div class="author-block">
           <div class="author-row">
-            <span>Mohammad Reza Modarres<sup>1,2*</sup></span>
-            <span>Armin Tourajmehr<sup>2*</sup></span>
+            <span>Mohammad Reza Modarres<sup>1,2</sup></span>
+            <span>Armin Tourajmehr<sup>2</sup></span>
           </div>
           <div class="author-row">
-            <span>Mohammad Taher Pilehvar<sup>3</sup></span>
             <span>Yadollah Yaghoobzadeh<sup>1,2</sup></span>
+            <span>Mohammad Taher Pilehvar<sup>3</sup></span>
           </div>
           <div class="affiliations">
             <div><sup>1</sup> School of Electrical and Computer Engineering, College of Engineering, University of Tehran, Tehran, Iran</div>
             <div><sup>2</sup> Tehran Institute for Advanced Studies, Khatam University, Iran</div>
             <div><sup>3</sup> Cardiff University, United Kingdom</div>
           </div>
-          <div class="equal-note"><sup>*</sup> Equal contribution</div>
           <div class="venue-badge"><span class="venue-dot"></span> EMNLP 2026 Findings</div>
         </div>
 
@@ -343,7 +342,7 @@
       <div class="container paper-block">
         <span class="kicker">Abstract</span>
         <h2>About the paper</h2>
-        <p>Evaluating creativity in large language model (LLM) outputs remains a fundamental challenge due to its inherently subjective nature. In this work, we examine the reliability of LLMs as evaluators of short literary texts in Persian, a low-resource language. Across a range of evaluation settings and prompt designs, we find that LLMs provide limited and unstable creativity judgments, particularly on subjective dimensions such as emotional intensity and attractiveness, and that their assessments are highly sensitive to prompt phrasing. Motivated by these findings, we investigate whether objective and interpretable proxy metrics can provide a more reliable alternative for the structured TTCT-derived dimensions. We introduce CLiN, an objective and interpretable evaluation framework grounded in the Torrance Tests of Creative Thinking (TTCT). CLiN uses dedicated proxy metrics for three TTCT-derived dimensions: a novelty-based metric for originality, lexical idea diversity for fluency, and n-gram diversity for elaboration. Our results show that these simple, objective, and interpretable proxy metrics can perform comparably to or better than the best-performing LLM judge, while providing substantially lower evaluation costs.</p>
+        <p>Evaluating creativity in large language model (LLM) outputs remains challenging because creativity is multidimensional and human-centered. We examine how reliably LLMs evaluate short literary text in Persian, a low-resource language, across multiple evaluation strategies and prompt formulations. We find that LLM–human agreement varies substantially across dimensions: alignment is stronger for structured TTCT-derived properties such as Originality, Fluency, and Elaboration, but considerably weaker for more subjective dimensions, particularly Emotion and Attractiveness. Judgments are also sensitive to prompt formulation, while few-shot prompting, ensembling, and multi-agent debate provide no consistent improvement. Motivated by this dimension-dependent behavior, we investigate whether structured creativity dimensions can instead be approximated using simple, interpretable proxy metrics. We introduce CLIN, which evaluates three TTCT-derived dimensions separately using topic-aware novelty for Originality, contextual lexical clustering for Fluency, and lexical diversity for Elaboration. These proxies achieve human alignment comparable to or better than the strongest zero-shot LLM judge in our setting while requiring substantially lower evaluation cost.</p>
         <div class="citation-box">
           <strong>Publication</strong>
           <span>Findings of EMNLP 2026</span>
